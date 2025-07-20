@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motor Cross Website
+  </title>
+  <!-- boot strap cdm  link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <!-- Google font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet">
+  <!-- remix -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+  <!--css style -->
+  <link rel="stylesheet" href="style.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- nav -->
+  <header class="sticky-top   border-bottom shadow-sm ">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center">
+          <img class="img1" src="./images/logo.png" alt="">
+          <nav class="d-none d-lg-flex align-items-center px-3">
+            <div class="nav-item dropdown ">
+              <a class="nav-link  text-dark px-3 fw-bold f1 " href="#rally" role="button">Rally</a>
+            </div>
+            <div class="nav-item dropdown">
+              <a class="nav-link   px-3 text-dark fw-bold f1" href="#content" role="button">Content</a>
+            </div>
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle px-3 text-dark fw-bold f1" href="#gear" role="button">Gear</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#gear">Helmets</a></li>
+                <li><a class="dropdown-item" href="#gear">Protective Gear</a></li>
+                <li><a class="dropdown-item" href="#gear">Boots</a></li>
+              </ul>
+            </div>
+            <div class="nav-item dropdown">
+              <a class="nav-link  text-dark fw-bold px-3 f1" href="#contact" role="button">Contact</a>
+            </div>
+          </nav>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <div class="d-none d-md-flex align-items-center bg-light rounded p-2">
+            <i class="ri-search-line me-2  text-primary fw-bold"></i>
+            <input type="text" class="form-control border-0 bg-transparent"
+              placeholder="Search events, content, gear..." />
+          </div>
+          <button class="btn p-2">
+            <i class="ri-notification-line  text-muted fw-bold"></i>
+          </button>
+          <button class="btn p-2">
+            <i class="ri-moon-line text-muted fw-bold"></i>
+          </button>
+          <div class="d-flex align-items-center gap-2">
+            <button class="btn btn-primary btn-custom px-2 py-1 fs-6 f1">Login</button>
+            <button class="btn btn-outline-primary btn-custom px-2 py-1 f1">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- main page -->
+  <section class="mainpage position-relative ">
+    <div id="carouselExampleIndicators" class="position-absolute carousel slide  " data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="./images/img1.jpg" class="img img-fluid d-block w-100 image" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="./images/img2.jpg" class="img img-fluid d-block w-100 image" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="./images/img3.jpg" class="img img-fluid d-block w-100 image" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container-fluid position-absolute  py-5">
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-5 col-sm-12 ">
+          <h1 class="display-4 fw-bold text-white mb-lg-4 f3">
+            Join the Ultimate<br />
+            <span class="text-primary f3">Motocross Rally</span><br />
+            Community
+          </h1>
+          <p class="lead text-white mb-4">
+            <span class="text-light fw-semibold f3">
+              Connect with riders, organize epic rallies, share your adventures,
+              and gear up for the ride of your life. Join thousands of motocross
+              enthusiasts worldwide.
+            </span>
+          </p>
+          <div class="d-flex gap-3 flex-wrap">
+            <button class="btn btn-primary btn-custom px-2   btn-main f1">Join Rally</button>
+            <button class="btn btn-dark btn-custom px-2  btn-main f1">Create Event</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- second section -->
+  <section class="min-vh-100 d-flex align-items-center bg-light " id="rally">
+    <div class="container py-5">
+      <div class="text-center mb-4">
+        <h2 class="fw-bolder f2">Upcoming Rallies</h2>
+        <p class="text-muted ">Find and join the most exciting motocross events near you</p>
+      </div>
+      <div class="d-flex justify-content-center flex-wrap gap-3 mb-5">
+        <div class="btn-group gap-2">
+          <button class="btn btn-warning rounded-3 fw-medium ">Calendar</button>
+          <button class="btn btn-main rounded-3">Map View</button>
+        </div>
+        <select class="form-select w-auto">
+          <option>All Locations</option>
+          <option>Idukki</option>
+          <option>Kottayam</option>
+          <option>Wayanad</option>
+          <option>Thrissur</option>
+        </select>
+        <select class="form-select w-auto">
+          <option>All Difficulty</option>
+          <option>Expert</option>
+          <option>Intermediate</option>
+          <option>Beginner</option>
+        </select>
+      </div>
+      <div class="row ">
+        <div class="col-md-4 ">
+          <div class="card h-100 shadow-sm ">
+            <img class="rounded-top" src="./images/b1.jpg">
+            <div class="card-body">
+              <span class="tag expert">Expert</span>
+              <p class="text-end text-muted small mt-1 mb-2">Aug 15, 2025</p>
+              <h5 class="card-title f1">Desert Thunder Rally</h5>
+              <p class="text-muted mb-1">Phoenix, Arizona • 127 participants</p>
+              <div class="d-flex justify-content-between">
+                <p class="text-muted small mb-2"><i class="bi bi-geo-alt"></i> 25 miles</p>
+                <a href="#" class="btn btn-warning text-white">Join Rally</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="./images/b2 (1).jpg" class="card-img-top" alt="Mountain Trail Challenge">
+            <div class="card-body">
+              <span class="tag intermediate">Intermediate</span>
+              <p class="text-end text-muted small mt-1 mb-2">Aug 22, 2025</p>
+              <h5 class="card-title f1">Mountain Trail Challenge</h5>
+              <p class="text-muted mb-1">Colorado Springs, CO • 89 participants</p>
+              <div class="d-flex justify-content-between">
+                <p class="text-muted small mb-2"><i class="bi bi-geo-alt"></i> 18 miles</p>
+                <a href="#" class="btn btn-warning text-white">Join Rally</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="./images/b2 (2).jpg" class="card-img-top" alt="Rookie Riders Meetup">
+            <div class="card-body">
+              <span class="tag beginner">Beginner</span>
+              <p class="text-end text-muted small mt-1 mb-2">Aug 29, 2025</p>
+              <h5 class="card-title f1">Rookie Riders Meetup</h5>
+              <p class="text-muted mb-1">Austin, TX • 156 participants</p>
+              <div class="d-flex justify-content-between">
+                <p class="text-muted small mb-2 "><i class="bi bi-geo-alt"></i> 12 miles</p>
+                <a href="#" class="btn btn-warning text-white">Join Rally</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- third section -->
+  <section class="dark-section  overflow-x-hidden" id="content">
+    <h2 class="fw-bold mb-2 f2">Trending Content</h2>
+    <p class="text-white-50">Watch the most popular videos from our community</p>
+    <div class="row justify-content-center my-5 g-5">
+      <div class="col-md-3">
+        <div class="card-box w-100">
+          <a href="https://youtu.be/25fHOKEX558?si=AVFG0UDBSaN2eUqN" target="_blank">
+            <img src="./images/Screenshot 2025-07-19 191531.png" alt="Video Thumbnail"
+              class="w-100 h-100 object-fit-cover rounded">
+          </a>
+          <div>
+            <h5 class="text-white mb-1 fw-bold pt-3 ">Best of ENDURO 2024 </h5>
+            <p class="text-white-50  text-muted f3">by Jaume Soler • 1 month ago</p>
+            <div class="d-flex gap-3 justify-content-center">
+              <p class="text-white-50 small text-muted f3">3.1M view </p>
+              <p class="text-white-50 small text-muted f3"><i class="fa-solid fa-thumbs-up" style="color: #ffffff;"></i>
+                1M </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" col-md-3">
+        <div class="card-box w-100">
+          <a href="https://youtu.be/IIinqG0mjvQ?si=gmnZwsw1WEEOur5H" target="_blank">
+            <img src="./images/Screenshot 2025-07-19 191556.png" alt="compilation Thumbnail"
+              class="w-100 h-100 object-fit-cover rounded">
+          </a>
+          <div>
+            <h5 class="text-white mb-1 fw-bold pt-3">Silver Kings Hard Enduro 2025 </h5>
+            <p class="text-white-50  text-muted f3">by Enduro Life Media • 1 month ago</p>
+            <div class="d-flex gap-3 justify-content-center">
+              <p class="text-white-50 small text-muted f3">1.1M view </p>
+              <p class="text-white-50 small text-muted f3"><i class="fa-solid fa-thumbs-up" style="color: #ffffff;"></i>
+                800K </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" col-md-3">
+        <div class="card-box w-100">
+          <a href="https://youtu.be/5mjVrCll4q0?si=bmJXMAxKO4kFn2mk" target="_blank">
+            <img src="./images/Screenshot 2025-07-19 191718.png" alt="Video Thumbnail"
+              class="w-100 h-100 object-fit-cover rounded">
+          </a>
+          <div>
+            <h5 class="text-white mb-1 fw-bold pt-3">Best Ways to Keep your Bike Like New!</h5>
+            <p class="text-white-50  text-muted f3">by Dirt Bike TV• 2 month ago</p>
+            <div class="d-flex gap-3 justify-content-center">
+              <p class="text-white-50 small text-muted f3">800K view </p>
+              <p class="text-white-50 small text-muted f3"><i class="fa-solid fa-thumbs-up" style="color: #ffffff;"></i>
+                100K </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div><a href="#" class="btn btn-warning text-white rounded-5 fw-bold f1">For More Videos</a></div>
+    </div>
+  </section>
+  <!-- last helmet section -->
+  <section class="dark-section " id="gear">
+    <h2 class="fw-bold mb-2 f2">Essential Gear</h2>
+    <p class="text-white-50 mb-5">Get equipped with the best motocross gear and accessories</p>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner" id="inner1">
+        <div class="carousel-item active">
+          <div class="d-flex  justify-content-center mb-5">
+            <a href="#" class="btn btn-warning text-white rounded-end-0 fw-bold  ">Helmets</a>
+            <div><a href="#" class="btn btn-light text-dark rounded-0 fw-bold f1">Protective Gears</a></div>
+            <div><a href="#" class="btn btn-light text-dark rounded-start-0 fw-bold f1 ">Boots</a></div>
+          </div>
+          <div class="container ">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 mt-5  ">
+              <div class="col"><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvrs9SnkMn6VdSQ8VX6gZmxoXcWmUXUoc-zfLaFp3BFTKywCHkHdtX9S5MPlM6T9F3uFA&usqp=CAU"
+                  alt="Video Thumbnail" class="w-100 h-75 object-fit-cover rounded-top">
+                <div class="card-body bg-light rounded-bottom p-1 d-none d-sm-none d-md-block ">
+                  <div class="d-flex justify-content-between px-1 py-2 ">
+                    <span class="tag intermediate p-2 f1">5 <i class="fa-solid fa-star fa-2xs"
+                        style="color: #0c8835;"></i>
+                      safety</span>
+                    <p class="fw-bold  mt-1 mb-2"><i class="fa-solid fa-star fa-xs " style="color: #FFD43B;"></i> 4.9
+                    </p>
+                    <a href="#" class="btn btn-dark  text-primary  px-3 rounded-5 small f1">Add To Cart</a>
+                  </div>
+                  <h5 class="card-title fw-bold small text-start px-1 ">Red Bull Motocross Helmet</h5>
+                  <p class="text-muted mb-1 text-start px-1 small">Bold design with pro-level impact protection</p>
+                </div>
+              </div>
+              <div class="col"><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdxba-EUpzRgXG2C_Y4S9jXmm9LKvEHaEpAw&s"
+                  alt="Video Thumbnail" class="w-100 h-75 object-fit-cover rounded-top">
+                <div class="card-body bg-light rounded-bottom p-1 d-none d-sm-none d-md-block ">
+                  <div class="d-flex justify-content-between px-1 py-2 ">
+                    <span class="tag intermediate p-2 f1">4.9 <i class="fa-solid fa-star fa-2xs"
+                        style="color: #0c8835;"></i>
+                      safety</span>
+                    <p class="fw-bold  mt-1 mb-2"><i class="fa-solid fa-star fa-xs " style="color: #FFD43B;"></i> 4.5
+                    </p>
+                    <a href="#" class="btn btn-dark  text-primary  px-3 rounded-5 small f1">Add To Cart</a>
+                  </div>
+                  <h5 class="card-title fw-bold small text-start px-1">Shoei VFX-EVO</h5>
+                  <p class="text-muted mb-1 text-start px-1 small">Premium fit and off-road safety</p>
+                </div>
+              </div>
+              <div class="col"><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpc5WIwztoo84T0pIcWVKYrHsACyeMLbaFWw&s"
+                  alt="Video Thumbnail" class="w-100 h-75 object-fit-cover rounded-top">
+                <div class="card-body bg-light rounded-bottom p-1 d-none d-sm-none d-md-block ">
+                  <div class="d-flex justify-content-between px-1 py-2 ">
+                    <span class="tag intermediate p-2 f1">4.5 <i class="fa-solid fa-star fa-2xs"
+                        style="color: #0c8835;"></i>
+                      safety</span>
+                    <p class="fw-bold  mt-1 mb-2"><i class="fa-solid fa-star fa-xs " style="color: #FFD43B;"></i> 4.1
+                    </p>
+                    <a href="#" class="btn btn-dark  text-primary  px-3 rounded-5 small f1">Add To Cart</a>
+                  </div>
+                  <h5 class="card-title fw-bold small text-start px-1">Alpinestars Supertech M10</h5>
+                  <p class="text-muted mb-1 text-start px-1 small">Lightweight carbon shell with MIPS protection</p>
+                </div>
+              </div>
+              <div class="col"><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm8PSPFw3dBX_wqULJd2xRmPHBoLZCt9PrmA&s"
+                  alt="Video Thumbnail" class="w-100 h-75 object-fit-cover rounded-top">
+                <div class="card-body bg-light rounded-bottom p-1 d-none d-sm-none d-md-block ">
+                  <div class="d-flex justify-content-between px-1 py-2 ">
+                    <span class="tag intermediate p-2 f1">4.3 <i class="fa-solid fa-star fa-2xs"
+                        style="color: #0c8835;"></i>
+                      safety</span>
+                    <p class="fw-bold  mt-1 mb-2"><i class="fa-solid fa-star fa-xs " style="color: #FFD43B;"></i> 4.1
+                    </p>
+                    <a href="#" class="btn btn-dark  text-primary  px-3 rounded-5 small f1">Add To Cart</a>
+                  </div>
+                  <h5 class="card-title fw-bold small text-start px-1">Fox Racing V3 RS</h5>
+                  <p class="text-muted mb-1 text-start px-1 small">Advanced safety tech with race-proven design</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item " id="protective">
+          <!--  -->
+          <div class="d-flex  justify-content-center mb-5">
+            <a href="#" class="btn btn-light text-dark rounded-end-0 fw-bold f1 ">Helmets</a>
+            <div><a href="#" class="btn btn-warning text-white rounded-0 fw-bold ">Protective Gears</a></div>
+            <div><a href="#" class="btn btn-light text-dark rounded-start-0 fw-bold f1">Boots</a></div>
+          </div>
+          <div class="container ">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 mt-5  ">
+              <div class="col"><img
+                  src="https://trevorpoperacewear.co.uk/cdn/shop/products/24018001_2_cb5ba078-5871-4105-bb32-d00f463672d0.jpg?v=1634115640&width=1000"
+                  alt="Video Thumbnail" class="w-100 h-75 object-fit-cover rounded-top">
+                <div class="card-body bg-light rounded-bottom p-1 d-none d-sm-none d-md-block ">
+                  <div class="d-flex justify-content-between px-1 py-2 ">
+                    <span class="tag intermediate p-2 f1">5 <i class="fa-solid fa-star fa-2xs"
+                        style="color: #0c8835;"></i>
+                      safety</span>
+                    <p class="fw-bold  mt-1 mb-2"><i class="fa-solid fa-star fa-xs f1" style="color: #FFD43B;"></i> 4.9
+                    </p>
+                    <a href="#" class="btn btn-dark  text-primary  px-3 rounded-5 small f1">Add To Cart</a>
+                  </div>
+                  <h5 class="card-title fw-bold small text-start px-1">Fox Titan Sport Jacket</h5>
+                  <p class="text-muted mb-1 text-start px-1 small">Full upper body coverage with CE-certified armor</p>
+                </div>
+              </div>
+              <div class="col"><img
+                  src="https://images-cdn.dashdigital.com/dirtbike/leatt_powersports_2020/data/articles/img/126.jpg"
+                  alt="Video Thumbnail" class="w-100 h-75 object-fit-cover rounded-top">
+                <div class="card-body bg-light rounded-bottom p-1 d-none d-sm-none d-md-block ">
+                  <div class="d-flex justify-content-between px-1 py-2 ">
+                    <span class="tag intermediate p-2 f1">4.9 <i class="fa-solid fa-star fa-2xs"
+                        style="color: #0c8835;"></i>
+                      safety</span>
+                    <p class="fw-bold  mt-1 mb-2"><i class="fa-solid fa-star fa-xs " style="color: #FFD43B;"></i> 4.5
+                    </p>
+                    <a href="#" class="btn btn-dark  text-primary  px-3 rounded-5 small f1">Add To Cart</a>
+                  </div>
+                  <h5 class="card-title fw-bold small text-start px-1">Leatt 5.5 Body Protector</h5>
+                  <p class="text-muted mb-1 text-start px-1 small">Maximum impact protection with lightweight design</p>
+                </div>
+              </div>
+              <div class="col"><img src="https://i.ytimg.com/vi/rye616q8iG0/maxresdefault.jpg" alt="Video Thumbnail"
+                  class="w-100 h-75 object-fit-cover rounded-top">
+                <div class="card-body bg-light rounded-bottom p-1 d-none d-sm-none d-md-block ">
+                  <div class="d-flex justify-content-between px-1 py-2 ">
+                    <span class="tag intermediate p-2 f1">4.5 <i class="fa-solid fa-star fa-2xs"
+                        style="color: #0c8835;"></i>
+                      safety</span>
+                    <p class="fw-bold  mt-1 mb-2"><i class="fa-solid fa-star fa-xs f1" style="color: #FFD43B;"></i> 4.1
+                    </p>
+                    <a href="#" class="btn btn-dark  text-primary  px-3 rounded-5 small f1">Add To Cart</a>
+                  </div>
+                  <h5 class="card-title fw-bold small text-start px-1"> EVS G6 Ballistic Jersey</h5>
+                  <p class="text-muted mb-1 text-start px-1 small">Integrated padding with breathable mesh comfort</p>
+                </div>
+              </div>
+              <div class="col"><img
+                  src="https://i.ytimg.com/vi/Kjb4o1RGiyA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDvzVQiCcMFN7LzJizURjG3aMTCiQ"
+                  alt="Video Thumbnail" class="w-100 h-75 object-fit-cover rounded-top">
+                <div class="card-body bg-light rounded-bottom p-1 d-none d-sm-none d-md-block ">
+                  <div class="d-flex justify-content-between px-1 py-2 ">
+                    <span class="tag intermediate p-2 f1">4.3 <i class="fa-solid fa-star fa-2xs"
+                        style="color: #0c8835;"></i>
+                      safety</span>
+                    <p class="fw-bold  mt-1 mb-2"><i class="fa-solid fa-star fa-xs f1" style="color: #FFD43B;"></i> 4.1
+                    </p>
+                    <a href="#" class="btn btn-dark  text-primary  px-3 rounded-5 small f1">Add To Cart</a>
+                  </div>
+                  <h5 class="card-title fw-bold small text-start px-1">Alpinestars Bionic Tech V2</h5>
+                  <p class="text-muted mb-1 text-start px-1 small">Pro-level chest and spine guard with modular fit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <div class="d-flex  justify-content-center mb-5">
+            <a href="#" class="btn btn-light text-dark rounded-end-0 fw-bold f1">Helmets</a>
+            <div><a href="#" class="btn btn-light text-dark rounded-0 fw-bold f1">Protective Gears</a></div>
+            <div><a href="#" class="btn btn-warning text-white  rounded-start-0 fw-bold ">Boots</a></div>
+          </div>
+          <div class="container ">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 mt-5  ">
+              <div class="col"><img
+                  src="https://www.foxracing.com/dw/image/v2/BGML_PRD/on/demandware.static/-/Library-Sites-FoxRacing/default/dw47f8eb04/landing/moto-boot-guide/instinct-fe-mob-hero.jpg"
+                  alt="Video Thumbnail" class="w-100 h-75 object-fit-cover rounded-top">
+                <div class="card-body bg-light rounded-bottom p-1 d-none d-sm-none d-md-block ">
+                  <div class="d-flex justify-content-between px-1 py-2 ">
+                    <span class="tag intermediate p-2 f1">5 <i class="fa-solid fa-star fa-2xs"
+                        style="color: #0c8835;"></i>
+                      safety</span>
+                    <p class="fw-bold  mt-1 mb-2"><i class="fa-solid fa-star fa-xs " style="color: #FFD43B;"></i> 4.9
+                    </p>
+                    <a href="#" class="btn btn-dark  text-primary  px-3 rounded-5 small f1">Add To Cart</a>
+                  </div>
+                  <h5 class="card-title fw-bold small text-start px-1">Fox Instinct Boots</h5>
+                  <p class="text-muted mb-1 text-start px-1 small">High-performance construction with ergonomic design
+                  </p>
+                </div>
+              </div>
+              <div class="col"><img
+                  src="https://ultimatemotorcycling.com/wp-content/uploads/2022/10/alpinestars-tech-10-supervented-boots-motocross-off-road-dirt-bike-9.jpg"
+                  alt="Video Thumbnail" class="w-100 h-75 object-fit-cover rounded-top">
+                <div class="card-body bg-light rounded-bottom p-1 d-none d-sm-none d-md-block ">
+                  <div class="d-flex justify-content-between px-1 py-2 ">
+                    <span class="tag intermediate p-2 f1">4.9 <i class="fa-solid fa-star fa-2xs"
+                        style="color: #0c8835;"></i>
+                      safety</span>
+                    <p class="fw-bold  mt-1 mb-2"><i class="fa-solid fa-star fa-xs f1" style="color: #FFD43B;"></i> 4.5
+                    </p>
+                    <a href="#" class="btn btn-dark  text-primary  px-3 rounded-5 small f1">Add To Cart</a>
+                  </div>
+                  <h5 class="card-title fw-bold small text-start px-1">Alpinestars Tech 10</h5>
+                  <p class="text-muted mb-1 text-start px-1 small">Top-tier protection with inner ankle brace system</p>
+                </div>
+              </div>
+              <div class="col"><img
+                  src="https://i0.wp.com/www.asphaltandrubber.com/wp-content/uploads/2016/09/Sidi-Crossfire-3-SRS-boot-02.jpg"
+                  class="w-100 h-75 object-fit-cover rounded-top">
+                <div class="card-body bg-light rounded-bottom p-1 d-none d-sm-none d-md-block ">
+                  <div class="d-flex justify-content-between px-1 py-2 ">
+                    <span class="tag intermediate p-2 f1">4.5 <i class="fa-solid fa-star fa-2xs"
+                        style="color: #0c8835;"></i>
+                      safety</span>
+                    <p class="fw-bold  mt-1 mb-2"><i class="fa-solid fa-star fa-xs " style="color: #FFD43B;"></i> 4.1
+                    </p>
+                    <a href="#" class="btn btn-dark  text-primary  px-3 rounded-5 small f1">Add To Cart</a>
+                  </div>
+                  <h5 class="card-title fw-bold small text-start px-1">Sidi Crossfire 3 SRS</h5>
+                  <p class="text-muted mb-1 text-start px-1 small">Replaceable sole with advanced ankle flex system</p>
+                </div>
+              </div>
+              <div class="col"><img
+                  src="https://cdn-0.motocrossactionmag.com/wp-content/uploads/2020/04/Gaerne-SG12-Red-Boot.jpg"
+                  alt="Video Thumbnail" class="w-100 h-75 object-fit-cover rounded-top">
+                <div class="card-body bg-light rounded-bottom p-1 d-none d-sm-none d-md-block ">
+                  <div class="d-flex justify-content-between px-1 py-2 ">
+                    <span class="tag intermediate p-2 f1 ">4.3 <i class="fa-solid fa-star fa-2xs"
+                        style="color: #0c8835;"></i>
+                      safety</span>
+                    <p class="fw-bold  mt-1 mb-2"><i class="fa-solid fa-star fa-xs " style="color: #FFD43B;"></i> 4.1
+                    </p>
+                    <a href="#" class="btn btn-dark  text-primary  px-3 rounded-5 small f1">Add To Cart</a>
+                  </div>
+                  <h5 class="card-title fw-bold small text-start px-1">Gaerne SG-12</h5>
+                  <p class="text-muted mb-1 text-start px-1 small">Dual hinge system with reinforced shin protection</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+<!-- footer -->
+  <footer class="text-light pt-5" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <img class="img1 mb-" src="./images/logo.png" alt="">
+          <p class="small text-dark py-4 f1">
+            The ultimate motocross rally community connecting riders worldwide through shared passion and adventure.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="#" class=" bg-secondary rounded-circle p-2"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class=" bg-secondary rounded-circle p-2"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class=" bg-secondary rounded-circle  p-2"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class=" bg-secondary rounded-circle p-2"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>    
+        <div class="col-md-2 mb-4">
+          <h6 class="fw-bold f3 text-dark small">Rally</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-decoration-none text-dark f1">Find Events</a></li>
+            <li><a href="#" class="text-decoration-none text-dark f1">Create Rally</a></li>
+            <li><a href="#" class="text-decoration-none text-dark f1">Join Teams</a></li>
+            <li><a href="#" class="text-decoration-none text-dark f1">Event Calendar</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h6 class="fw-bold text-dark f3 small">Community</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-decoration-none text-dark f1">Forums</a></li>
+            <li><a href="#" class="text-decoration-none text-dark f1">Leaderboards</a></li>
+            <li><a href="#" class="text-decoration-none text-dark f1">Rider Profiles</a></li>
+            <li><a href="#" class="text-decoration-none text-dark f1">Achievements</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h6 class="fw-bold text-dark small f3">Support</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-decoration-none text-dark f1">Help Center</a></li>
+            <li><a href="#" class="text-decoration-none text-dark f1">Safety Guidelines</a></li>
+            <li><a href="#" class="text-decoration-none text-dark f1">Contact Us</a></li>
+            <li><a href="#" class="text-decoration-none text-dark f1">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary">   
+      <div class="text-center mb-3">
+        <h6 class=" text-dark f1">Stay Updated</h6>
+        <p class="small text-dark">Get the latest rally news and exclusive content</p>
+        <form class="d-flex justify-content-center gap-2">
+          <input type="email" class="form-control w-auto bg-light text-dark border-secondary rounded-pill px-3 "
+            placeholder="Enter your email">
+          <button class="btn btn-orange px-4 rounded-pill" type="submit"
+            style="background-color:#ff6a00; color: white;">Subscribe</button>
+        </form>
+      </div>
+      <hr class="border-secondary">
+      <p class="text-dark text-center mb-0">© 2025 MotoRally. All rights reserved. Built for riders, by riders.
+      </p>
+    </div>
+  </footer>
+</body>
+<!-- bootstrap javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</html>
