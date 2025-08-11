@@ -33,6 +33,8 @@ header ,footer {
 }
 html {
     --primary: #ff6b35;
+    scroll-behavior: smooth;
+
 }
 
 .nav-link:hover {
